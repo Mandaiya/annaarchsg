@@ -8,7 +8,7 @@
 # All rights reserved.
 #
 
-HELP_1 = """✅**<u>Admin Commands:</u>**
+HELP_1 = """"⍙⍙**<u>Admin Commands:</u>**"
 
 **c** stands for channel play.
 
@@ -24,15 +24,15 @@ HELP_1 = """✅**<u>Admin Commands:</u>**
 /restart - Restart bot for your chat .
 
 
-✅<u>**Specific Skip:**</u>
+⍙⍙<u>**Specific Skip:**</u>
 /skip or /cskip [Number(example: 3)] 
     - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
 
-✅<u>**Loop Play:**</u>
+⍙⍙<u>**Loop Play:**</u>
 /loop or /cloop [enable/disable] or [Numbers between 1-10] 
     - When activated, bot loops the current playing music to 1-10 times on voice chat. Default to 10 times.
 
-✅<u>**Auth Users:**</u>
+⍙⍙<u>**Auth Users:**</u>
 Auth Users can use admin commands without admin rights in your chat.
 
 /auth [Username] - Add a user to AUTH LIST of the group.
@@ -40,7 +40,7 @@ Auth Users can use admin commands without admin rights in your chat.
 /authusers - Check AUTH LIST of the group."""
 
 
-HELP_2 = """✅<u>**Play Commands:**</u>
+HELP_2 = """⍙⍙<u>**Play Commands:**</u>
 
 Available Commands = play , vplay , cplay
 
@@ -57,13 +57,13 @@ ForcePlay Commands = playforce , vplayforce , cplayforce
 /channelplay [Chat username or id] or [Disable] - Connect channel to a group and stream music on channel's voice chat from your group.
 
 
-✅**<u>Bot's Server Playlists:</u>**
+⍙⍙**<u>Bot's Server Playlists:</u>**
 /playlist  - Check Your Saved Playlist On Servers.
 /deleteplaylist - Delete any saved music in your playlist
 /play  - Start playing Your Saved Playlist from Servers."""
 
 
-HELP_3 = """✅<u>**Bot Commands:**</u>
+HELP_3 = """⍙⍙<u>**Bot Commands:**</u>
 
 /stats - Get Top 10 Tracks Global Stats, Top 10 Users of bot, Top 10 Chats on bot, Top 10 Played in a chat etc etc.
 
@@ -79,51 +79,51 @@ HELP_3 = """✅<u>**Bot Commands:**</u>
 
 /queue or /cqueue- Check Queue List of Music."""
 
-HELP_4 = """✅<u>**Extra  Commands:**</u>
+HELP_4 = """⍙⍙<u>**Extra  Commands:**</u>
 /start - Start the Music Bot.
 /help  - Get Commands Helper Menu with detailed explanations of commands.
 /ping- Ping the Bot and check Ram, Cpu etc stats of Bot.
 
-✅<u>**Group Settings:**</u>
+⍙⍙<u>**Group Settings:**</u>
 /settings - Get a complete group's settings with inline buttons
 
 🔗 **Options in Settings:**
 
-1️⃣ You can set **Audio Quality** you want to stream on voice chat.
+ ⓵ You can set **Audio Quality** you want to stream on voice chat.
 
-2️⃣ You can set **Video Quality** you want to stream on voice chat.
+ ➋ You can set **Video Quality** you want to stream on voice chat.
 
-3️⃣ **Auth Users**:- You can change admin commands mode from here to everyone or admins only. If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
+ ⓷ **Auth Users**:- You can change admin commands mode from here to everyone or admins only. If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
 
-4️⃣ **Clean Mode:** When enabled deletes the bot's messages after 5 mins from your group to make sure your chat remains clean and good.
+ ➍ **Clean Mode:** When enabled deletes the bot's messages after 5 mins from your group to make sure your chat remains clean and good.
 
-5️⃣ **Command Clean** : When activated, Bot will delete its executed commands (/play, /pause, /shuffle, /stop etc) immediately.
+ ⓹ **Command Clean** : When activated, Bot will delete its executed commands (/play, /pause, /shuffle, /stop etc) immediately.
 
-6️⃣ **Play Settings:**
+ ➏ **Play Settings:**
 
 /playmode - Get a complete play settings panel with buttons where you can set your group's play settings. 
 
 <u>Options in playmode:</u>
 
-1️⃣ **Search Mode** [Direct or Inline] - Changes your search mode while you give /play mode. 
+ Ⅰ **Search Mode** [Direct or Inline] - Changes your search mode while you give /play mode. 
 
-2️⃣ **Admin Commands** [Everyone or Admins] - If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
+ Ⅱ **Admin Commands** [Everyone or Admins] - If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
 
-3️⃣ **Play Type** [Everyone or Admins] - If admins, only admins present in group can play music on voice chat."""
+ Ⅲ **Play Type** [Everyone or Admins] - If admins, only admins present in group can play music on voice chat."""
 
 HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
 /addsudo [Username or Reply to a user]
 /delsudo [Username or Reply to a user]
 
-🛃**<u>HEROKU:</u>**
+㊇**<u>HEROKU:</u>**
 /usage - Dyno Usage.
 
-🌐**<u>CONFIG VARS:</u>**
+ↂ**<u>CONFIG VARS:</u>**
 /get_var - Get a config var from Heroku or .env.
 /del_var - Delete any var on Heroku or .env.
 /set_var [Var Name] [Value] - Set a Var or Update a Var on heroku or .env. Seperate Var and its Value with a space.
 
-🤖**<u>BOT COMMANDS:</u>**
+㈣**<u>BOT COMMANDS:</u>**
 /reboot - Reboot your Bot. 
 /update - Update Bot.
 /speedtest - Check server speeds
@@ -132,12 +132,12 @@ HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
 /get_log [Number of Lines] - Get log of your bot from heroku or vps. Works for both.
 /autoend [enable|disable] - Enable Auto stream end after 3 mins if no one is listening.
 
-📈**<u>STATS COMMANDS:</u>**
+𝝿**<u>STATS COMMANDS:</u>**
 /activevoice - Check active voice chats on bot.
 /activevideo - Check active video calls on bot.
 /stats - Check Bots Stats
 
-⚠️**<u>BLACKLIST CHAT FUNCTION:</u>**
+👀**<u>BLACKLIST CHAT FUNCTION:</u>**
 /blacklistchat [CHAT_ID] - Blacklist any chat from using Music Bot
 /whitelistchat [CHAT_ID] - Whitelist any blacklisted chat from using Music Bot
 /blacklistedchat - Check all blacklisted chats.
