@@ -224,7 +224,7 @@ PING_IMG_URL = getenv(
 
     "PING_IMG_URL",
 
-    "assets/Ping.jpeg",
+    "https://telegra.ph/file/05c39fa7dbb9b261cc993.jpg",
 
 )
 
@@ -232,7 +232,7 @@ PLAYLIST_IMG_URL = getenv(
 
     "PLAYLIST_IMG_URL",
 
-    "assets/Playlist.jpeg",
+    "https://telegra.ph/file/2b6154bf6700cff8328ff.jpg",
 
 )
 
@@ -256,7 +256,7 @@ TELEGRAM_AUDIO_URL = getenv(
 
     "TELEGRAM_AUDIO_URL",
 
-    "assets/Audio.jpeg",
+    "https://telegra.ph/file/92aa5677315a7731bac26.jpg",
 
 )
 
@@ -264,7 +264,7 @@ TELEGRAM_VIDEO_URL = getenv(
 
     "TELEGRAM_VIDEO_URL",
 
-    "assets/Video.jpeg",
+    "https://telegra.ph/file/9e05c8a1c60f2e7999a18.jpg",
 
 )
 
@@ -312,7 +312,7 @@ SPOTIFY_PLAYLIST_IMG_URL = getenv(
 
     "SPOTIFY_PLAYLIST_IMG_URL",
 
-    "assets/SpotifyPlaylist.jpeg",
+    "https://telegra.ph/file/95970467a809828f8474d.jpg",
 
 )
 
