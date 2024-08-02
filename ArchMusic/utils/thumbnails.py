@@ -116,13 +116,13 @@ async def gen_thumb(videoid):
             #image2.paste(circle, (0, 0), mask=circle)
 
             font1 = ImageFont.truetype('assets/font.ttf', 30)
-            font2 = ImageFont.truetype('assets/font2.ttf', 90)
-            font3 = ImageFont.truetype('assets/font2.ttf', 60)
-            font4 = ImageFont.truetype('assets/font2.ttf', 65)
+            #font2 = ImageFont.truetype('assets/font2.ttf', 90)
+            font3 = ImageFont.truetype('assets/font2.ttf', 50)
+            #font4 = ImageFont.truetype('assets/font2.ttf', 65)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((350, 50), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
-            image4.text((170, 150), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=4, stroke_fill="white", align="left")
+            image4.text((170, 150), "NOW PLAYING A SONG FORM UNIVERSE", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
 
             title1 = truncate(title)
             image4.text((100, 300), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
@@ -132,9 +132,9 @@ async def gen_thumb(videoid):
             duration = f"Duration : {duration} Mins"
             channel = f"Channel : {channel}"
 
-            image4.text((700, 350), text=views, fill="white", font=font4, align="left")
-            image4.text((700, 400), text=duration, fill="white", font=font4, align="left")
-            image4.text((700, 450), text=channel, fill="white", font=font4, align="left")
+            #image4.text((700, 350), text=views, fill="white", font=font4, align="left")
+            #image4.text((700, 400), text=duration, fill="white", font=font4, align="left")
+            #image4.text((700, 450), text=channel, fill="white", font=font4, align="left")
 
             image2 = ImageOps.expand(image2, border=20, fill=make_col())
             image2 = image2.convert('RGB')
