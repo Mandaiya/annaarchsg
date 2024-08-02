@@ -84,7 +84,7 @@ async def start_comm(client, message: Message, _):
                 videoid = None
                 for vidid, count in list_arranged.items():
                     tota += count
-                    if limit == 10:
+                    if limit == 30:
                         continue
                     if limit == 0:
                         videoid = vidid
@@ -256,7 +256,7 @@ async def welcome(client, message: Message):
                 userbot = await get_assistant(message.chat.id)
                 out = start_pannel(_)
 
-                video_url = "https://telegra.ph/file/acfb445238b05315f0013.mp4"  # Replace with the actual URL of the video
+                video_url = "https://telegra.ph/file/0dfe1b6f8676bf56446b6.jpg"  # Replace with the actual URL of the video
                 video_caption = _["start_3"].format(config.MUSIC_BOT_NAME, userbot.username, userbot.id)
 
                 await app.send_video(
