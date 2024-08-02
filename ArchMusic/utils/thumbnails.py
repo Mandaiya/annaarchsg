@@ -121,12 +121,12 @@ async def gen_thumb(videoid):
             font4 = ImageFont.truetype('assets/font2.ttf', 65)
 
             image4 = ImageDraw.Draw(image2)
-            image4.text((810, 50), f"{MUSIC_BOT_NAME}", fill="White", font=font1, align="left")
-            image4.text((50, 50), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
+            image4.text((950, 50), f"{MUSIC_BOT_NAME}", fill="White", font=font1, align="left")
+            image4.text((30, 50), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
 
             title1 = truncate(title)
             image4.text((630, 650), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
-            image4.text((630, 600), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
+            image4.text((500, 600), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
 
             views = f"Views : {views}"
             duration = f"Duration : {duration} Mins"
@@ -136,7 +136,7 @@ async def gen_thumb(videoid):
             #image4.text((670, 500), text=duration, fill="white", font=font4, align="left")
             #image4.text((670, 550), text=channel, fill="white", font=font4, align="left")
 
-            image2 = ImageOps.expand(image2, border=20, fill=make_col())
+            image2 = ImageOps.expand(image2, border=5, fill=make_col())
             image2 = image2.convert('RGB')
             image2.save(f"cache/{videoid}.jpg")
             file = f"cache/{videoid}.jpg"
