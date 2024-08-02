@@ -220,10 +220,10 @@ async def gen_qthumb(videoid):
             #image2.paste(image3, (50, 70), mask=image3)
             #image2.paste(circle, (0, 0), mask=circle)
 
-            font1 = ImageFont.truetype('assets/font.ttf', 30)
-            font2 = ImageFont.truetype('assets/font2.ttf', 70)
-            font3 = ImageFont.truetype('assets/font2.ttf', 40)
-            font4 = ImageFont.truetype('assets/font2.ttf', 35)
+            #font1 = ImageFont.truetype('assets/font.ttf', 30)
+            #font2 = ImageFont.truetype('assets/font2.ttf', 70)
+            #font3 = ImageFont.truetype('assets/font2.ttf', 40)
+            #font4 = ImageFont.truetype('assets/font2.ttf', 35)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((960, 10), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
