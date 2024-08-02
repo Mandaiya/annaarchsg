@@ -116,7 +116,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_6"], url=f"https://github.com/Mandaiya/annaarchsg"
+                        text=_["S_B_6"], url=f"https://telegra.ph/file/ea6269690852a2b631f29.mp4"
                     ),
                 ]
             )
