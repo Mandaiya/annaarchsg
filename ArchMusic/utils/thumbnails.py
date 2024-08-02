@@ -82,7 +82,7 @@ async def gen_thumb(videoid):
             youtube = Image.open(f"cache/thumb{videoid}.jpg")
             image1 = changeImageSize(1280, 720, youtube)
             image2 = image1.convert("RGBA")
-            background = image2.filter(filter=ImageFilter.BoxBlur(5))
+            background = image2.filter(filter=ImageFilter.BoxBlur(20))
             enhancer = ImageEnhance.Brightness(background)
             background = enhancer.enhance(0.9)
             image2 = background
@@ -122,7 +122,7 @@ async def gen_thumb(videoid):
 
             image4 = ImageDraw.Draw(image2)
             image4.text((350, 50), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
-            image4.text((170, 150), "NOW PLAYING A SONG FORM UNIVERSE", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
+            image4.text((170, 150), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
 
             title1 = truncate(title)
             image4.text((100, 300), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
