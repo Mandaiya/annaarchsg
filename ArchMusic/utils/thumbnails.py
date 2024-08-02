@@ -225,9 +225,9 @@ async def gen_qthumb(videoid):
             #font3 = ImageFont.truetype('assets/font2.ttf', 40)
             #font4 = ImageFont.truetype('assets/font2.ttf', 35)
 
-            image4 = ImageDraw.Draw(image2)
-            image4.text((960, 10), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
-            image4.text((670, 150), "ADDED TO QUEUE", fill="white", font=font2, stroke_width=2, stroke_fill="red", align="left")
+            #image4 = ImageDraw.Draw(image2)
+            #image4.text((960, 10), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
+            #image4.text((670, 150), "ADDED TO QUEUE", fill="white", font=font2, stroke_width=2, stroke_fill="red", align="left")
 
             title1 = truncate(title)
             image4.text((670, 300), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
