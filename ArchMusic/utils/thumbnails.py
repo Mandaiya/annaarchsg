@@ -121,12 +121,12 @@ async def gen_thumb(videoid):
             font4 = ImageFont.truetype('assets/font2.ttf', 65)
 
             image4 = ImageDraw.Draw(image2)
-            image4.text((670, 50), f"{MUSIC_BOT_NAME}", fill="Black", font=font1, align="left")
-            image4.text((170, 150), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
+            image4.text((710, 50), f"{MUSIC_BOT_NAME}", fill="White", font=font1, align="left")
+            image4.text((70, 50), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
 
             title1 = truncate(title)
-            image4.text((100, 300), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
-            image4.text((100, 350), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
+            image4.text((670, 600), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
+            image4.text((670, 650), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
 
             views = f"Views : {views}"
             duration = f"Duration : {duration} Mins"
