@@ -89,12 +89,12 @@ def top_play_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_9"], callback_data="SERVERTOP Global"
+                text=_["PL_B_9"], callback_data="SERVERTOP Universe"
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_10"], callback_data="SERVERTOP Group"
+                text=_["PL_B_10"], callback_data="SERVERTOP Base"
             )
         ],
         [
