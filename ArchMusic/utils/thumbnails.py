@@ -121,12 +121,12 @@ async def gen_thumb(videoid):
             font4 = ImageFont.truetype('assets/font2.ttf', 65)
 
             image4 = ImageDraw.Draw(image2)
-            image4.text((350, 50), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
+            image4.text((670, 50), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
             image4.text((170, 150), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
 
             title1 = truncate(title)
-            image4.text((100, 550), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
-            image4.text((100, 600), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
+            image4.text((100, 550), text=title1[0], fill="white", stroke_width=1, stroke_fill="Back", font=font3, align="left")
+            image4.text((100, 600), text=title1[1], fill="white", stroke_width=1, stroke_fill="Black", font=font3, align="left")
 
             views = f"Views : {views}"
             duration = f"Duration : {duration} Mins"
@@ -187,7 +187,7 @@ async def gen_qthumb(videoid):
             youtube = Image.open(f"cache/thumb{videoid}.jpg")
             image1 = changeImageSize(1280, 720, youtube)
             image2 = image1.convert("RGBA")
-            background = image2.filter(filter=ImageFilter.BoxBlur(30))
+            background = image2.filter(filter=ImageFilter.BoxBlur(15))
             enhancer = ImageEnhance.Brightness(background)
             background = enhancer.enhance(0.6)
             image2 = background
@@ -220,10 +220,10 @@ async def gen_qthumb(videoid):
             #image2.paste(image3, (50, 70), mask=image3)
             #image2.paste(circle, (0, 0), mask=circle)
 
-            #font1 = ImageFont.truetype('assets/font.ttf', 30)
-            #font2 = ImageFont.truetype('assets/font2.ttf', 70)
-            #font3 = ImageFont.truetype('assets/font2.ttf', 40)
-            #font4 = ImageFont.truetype('assets/font2.ttf', 35)
+            font1 = ImageFont.truetype('assets/font.ttf', 30)
+            font2 = ImageFont.truetype('assets/font2.ttf', 70)
+            font3 = ImageFont.truetype('assets/font2.ttf', 40)
+            font4 = ImageFont.truetype('assets/font2.ttf', 35)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((960, 10), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
