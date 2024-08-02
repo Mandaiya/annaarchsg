@@ -116,9 +116,9 @@ async def gen_thumb(videoid):
             #image2.paste(circle, (0, 0), mask=circle)
 
             font1 = ImageFont.truetype('assets/font.ttf', 30)
-            #font2 = ImageFont.truetype('assets/font2.ttf', 90)
+            font2 = ImageFont.truetype('assets/font2.ttf', 70)
             font3 = ImageFont.truetype('assets/font2.ttf', 50)
-            #font4 = ImageFont.truetype('assets/font2.ttf', 65)
+            font4 = ImageFont.truetype('assets/font2.ttf', 65)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((350, 50), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
