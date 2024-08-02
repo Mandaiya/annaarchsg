@@ -82,9 +82,9 @@ async def gen_thumb(videoid):
             youtube = Image.open(f"cache/thumb{videoid}.jpg")
             image1 = changeImageSize(1280, 720, youtube)
             image2 = image1.convert("RGBA")
-            background = image2.filter(filter=ImageFilter.BoxBlur(20))
+            background = image2.filter(filter=ImageFilter.BoxBlur(8))
             enhancer = ImageEnhance.Brightness(background)
-            background = enhancer.enhance(0.9)
+            background = enhancer.enhance(1.2)
             image2 = background
 
             #circle = Image.open("assets/circle.png")
@@ -125,8 +125,8 @@ async def gen_thumb(videoid):
             image4.text((170, 150), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
 
             title1 = truncate(title)
-            image4.text((100, 300), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
-            image4.text((100, 350), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
+            image4.text((100, 550), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
+            image4.text((100, 600), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
 
             views = f"Views : {views}"
             duration = f"Duration : {duration} Mins"
