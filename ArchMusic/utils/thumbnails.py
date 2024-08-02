@@ -82,7 +82,7 @@ async def gen_thumb(videoid):
             youtube = Image.open(f"cache/thumb{videoid}.jpg")
             image1 = changeImageSize(1280, 720, youtube)
             image2 = image1.convert("RGBA")
-            background = image2.filter(filter=ImageFilter.BoxBlur(9))
+            background = image2.filter(filter=ImageFilter.BoxBlur(5))
             enhancer = ImageEnhance.Brightness(background)
             background = enhancer.enhance(0.9)
             image2 = background
@@ -116,13 +116,13 @@ async def gen_thumb(videoid):
             #image2.paste(circle, (0, 0), mask=circle)
 
             font1 = ImageFont.truetype('assets/font.ttf', 30)
-            font2 = ImageFont.truetype('assets/font2.ttf', 70)
-            font3 = ImageFont.truetype('assets/font2.ttf', 40)
-            font4 = ImageFont.truetype('assets/font2.ttf', 35)
+            font2 = ImageFont.truetype('assets/font2.ttf', 90)
+            font3 = ImageFont.truetype('assets/font2.ttf', 60)
+            font4 = ImageFont.truetype('assets/font2.ttf', 65)
 
             image4 = ImageDraw.Draw(image2)
-            image4.text((150, 40), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
-            image4.text((170, 150), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=2, stroke_fill="white", align="left")
+            image4.text((350, 50), f"{MUSIC_BOT_NAME}", fill="white", font=font1, align="left")
+            image4.text((170, 150), "NOW PLAYING", fill="Yellow", font=font2, stroke_width=4, stroke_fill="white", align="left")
 
             title1 = truncate(title)
             image4.text((100, 300), text=title1[0], fill="white", stroke_width=1, stroke_fill="white", font=font3, align="left")
@@ -132,9 +132,9 @@ async def gen_thumb(videoid):
             duration = f"Duration : {duration} Mins"
             channel = f"Channel : {channel}"
 
-            image4.text((670, 350), text=views, fill="white", font=font4, align="left")
-            image4.text((670, 400), text=duration, fill="white", font=font4, align="left")
-            image4.text((670, 450), text=channel, fill="white", font=font4, align="left")
+            image4.text((700, 350), text=views, fill="white", font=font4, align="left")
+            image4.text((700, 400), text=duration, fill="white", font=font4, align="left")
+            image4.text((700, 450), text=channel, fill="white", font=font4, align="left")
 
             image2 = ImageOps.expand(image2, border=20, fill=make_col())
             image2 = image2.convert('RGB')
