@@ -107,7 +107,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             [
                 InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
                 InlineKeyboardButton(
-                    text=_["S_B_6"], url=f"https://telegra.ph/file/ea6269690852a2b631f29.mp4"
+                    text=_["S_B_6"], url=f"https://t.me/Soupboy_single"
                 ),
             ]
         )
