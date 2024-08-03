@@ -16,7 +16,7 @@ API_ID = int(getenv("API_ID", ""))
 
 API_HASH = getenv("API_HASH", "")
 
-## Get it from @Botfather in Telegram.
+## Get it from @Botfather in Telegram tele.
 
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 
