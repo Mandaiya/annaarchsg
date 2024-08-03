@@ -89,7 +89,7 @@ async def gen_thumb(videoid):
 
             #circle = Image.open("assets/circle.png")
 
-            #im = circle, rectangle
+            #im = circle
             #im = im.convert('RGBA')
             #color = make_col()
 
