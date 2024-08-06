@@ -10,7 +10,7 @@ from pyrogram import filters
 
 load_dotenv()
 
-# Get it from my.telegram.org
+# Get it from my.telegram.orgg
 
 API_ID = int(getenv("API_ID", ""))
 
