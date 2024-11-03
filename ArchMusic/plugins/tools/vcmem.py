@@ -52,7 +52,7 @@ async def vc_members(client, message):
         if len(TEXT) < 4000:
             await msg.edit(TEXT or _["V_C_3"])
         else:
-            link = await Yukkibin(TEXT)
+            link = await ArchMusic(TEXT)
             await msg.edit(
                 _["V_C_4"].format(link),
                 disable_web_page_preview=True,
