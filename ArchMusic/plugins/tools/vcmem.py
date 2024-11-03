@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatType
 from strings import get_string
 from ArchMusic import app
-from ArchMusic.utils import Yukkibin
+from ArchMusic.utils import ArchMusic
 from ArchMusic.utils.database import get_assistant, get_lang
 
 
