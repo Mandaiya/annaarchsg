@@ -50,6 +50,7 @@ RADIO_STATION = {
     "Mirchi 98.3 FM": "https://playerservices.streamtheworld.com/api/livestream-redirect/NJS_HIN_ESTAAC.m3u8",
     "Hungama 90s Once Again": "https://stream.zeno.fm/rm4i9pdex3cuv",
     "Hungama Evergreen Bollywood": "https://server.mixify.in:8010/radio.mp3",
+    "Shakthi FM - tamil": "ttp://76.164.217.100:7012/;stream.mp3"
 }
 
 valid_stations = "\n".join([f"`{name}`" for name in sorted(RADIO_STATION.keys())])
