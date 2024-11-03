@@ -1,18 +1,16 @@
 import logging
 from telebot import TeleBot
 import random
+from config import BOT_TOKEN  # Import the token from the config file
 
 # Enable logging
 logging.basicConfig(level=logging.INFO)
-
-# Define the bot token
-TOKEN = ''  # Replace 'YOUR_BOT_TOKEN' with your actual bot token
 
 # Define the game state
 game_state = {'user_score': 0, 'bot_score': 0, 'target_score': random.randint(10, 20)}
 
 # Define the bot
-bot = TeleBot(TOKEN)
+bot = TeleBot(BOT_TOKEN)
 
 # Define the game logic
 def start_game(message):
