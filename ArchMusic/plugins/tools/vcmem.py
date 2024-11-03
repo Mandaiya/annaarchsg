@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatType
 from strings import get_string
 from ArchMusic import app
-from ArchMusic.utils import ArchMusic
+from ArchMusic.utils import ArchMusicbin
 from ArchMusic.utils.database import get_assistant, get_lang
 
 
@@ -52,7 +52,7 @@ async def vc_members(client, message):
         if len(TEXT) < 4000:
             await msg.edit(TEXT or _["V_C_3"])
         else:
-            link = await ArchMusic(TEXT)
+            link = await ArchMusicbin(TEXT)
             await msg.edit(
                 _["V_C_4"].format(link),
                 disable_web_page_preview=True,
