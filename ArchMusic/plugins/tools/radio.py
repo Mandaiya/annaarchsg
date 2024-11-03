@@ -50,13 +50,6 @@ RADIO_STATION = {
     "Mirchi 98.3 FM": "https://playerservices.streamtheworld.com/api/livestream-redirect/NJS_HIN_ESTAAC.m3u8",
     "Hungama 90s Once Again": "https://stream.zeno.fm/rm4i9pdex3cuv",
     "Hungama Evergreen Bollywood": "https://server.mixify.in:8010/radio.mp3",
-    # Tamil radio stations
-    "Hello FM": "http://sc-bb.1.fm:8017/;",
-    "Suryan FM Tamil": "https://onlineradiofm.in/stations/suryan",
-    "Radio Mirchi Tamil": "https://onlineradiofm.in/stations/mirchi",
-    "SPB Radio Tamil": "http://144.217.203.184:8322/;stream.nsv",
-    "Ilayaraja Radio": "https://stream.zeno.fm/ak5f61rxrp8uv",
-    "Namo Radio": "https://onlineradiofm.in/stations/namm",
 }
 
 valid_stations = "\n".join([f"`{name}`" for name in sorted(RADIO_STATION.keys())])
