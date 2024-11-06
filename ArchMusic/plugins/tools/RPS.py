@@ -1,16 +1,9 @@
-#rock paper scissors game 
-import config
 import logging
 import random
 import requests
-from dotenv import load_dotenv
-import os
 
-# Load environment variables from the .env file
-load_dotenv()
-
-# Get the bot token from the environment variable
-BOT_TOKEN = os.getenv('BOT_TOKEN')
+# Define the bot token directly in the script
+BOT_TOKEN = '6991024540:AAFeaNbThwfbR8i82SLyrT8tjS5VZjIimk4'  # Replace 'YOUR_BOT_TOKEN' with your actual bot token
 
 # Enable logging
 logging.basicConfig(level=logging.INFO)
