@@ -1,5 +1,5 @@
 #rock paper scissors game 
-
+import config
 import logging
 import random
 import requests
